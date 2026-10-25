@@ -1,0 +1,34 @@
+# OS / Obsidian runtime
+.DS_Store
+Thumbs.db
+.trash/
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspaces.json
+
+# Plugin runtime/config may contain local paths or tokens.
+.obsidian/plugins/*/data.json
+.obsidian/plugins/wayfinder-maps/data.json
+.obsidian-git-data
+
+# Do not vendor downloaded community-plugin bundles by default.
+.obsidian/plugins/*/main.js
+.obsidian/plugins/*/styles.css
+.obsidian/plugins/*/manifest.json
+
+# Local caches / indexes
+.smart-env/
+.smart-connections/
+.qmd/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*
+secrets.y*ml
+auth.json
