@@ -2,29 +2,34 @@
 
 Obsidian/GitHub workspace pro vznik cozy fantasy knihy o těhotné alchymistce.
 
-> **Stav:** bootstrap. Finální struktura vaultu ještě není rozhodnutá. Nejdřív ji hledáme přes [Wayfinder: setup autorského systému](https://github.com/BleedingDev/jeste-nevim-pribehy-latecka/issues/1).
+> **Stav:** implementační draft PR #5. Autorský systém je rozhodnutý v [setup mapě #1](https://github.com/BleedingDev/jeste-nevim-pribehy-latecka/issues/1); kánon příběhu se tím nemění.
 
-## Co je už rozhodnuto
+## Zdroj pravdy
 
-- Obsidian = pracovní prostředí pro obsah knihy a prolinkovanou znalostní bázi.
-- Git = historie a záloha vaultu.
-- GitHub Issues = rozhodnutí, Wayfinder mapy a později realizovatelné úkoly.
-- Wayfinder Maps = vizualizace Wayfinder issues uvnitř Obsidianu.
-- Původní handoff je vstup, ne definitivní kánon.
+- **Obsidian:** aktuální obsah a kánon.
+- **GitHub Issues / Wayfinder:** rozhodnutí a úkoly.
+- **Git:** historie.
 
 ## Začni tady
 
-1. Naklonuj tento repozitář.
-2. Otevři jeho kořen jako Obsidian vault.
-3. Přečti `99 System/Obsidian Bootstrap.md`.
-4. Otevři Wayfinder mapu issue #1.
-5. Obsah knihy zatím ukládej do `00 Inbox`; finální taxonomii vytvoříme až po vyčištění setup mapy.
+1. Naklonuj repo a otevři jeho kořen jako Obsidian vault.
+2. Přečti [Setup Specification](99%20System/Setup%20Specification.md).
+3. Pro Wayfinder Maps postupuj podle [Obsidian Bootstrap](99%20System/Obsidian%20Bootstrap.md).
+4. Nápady zachytávej v `00 Inbox`, trvalé entity v příslušných složkách.
+5. Šablony jsou v `99 System/Templates`; export v `tools/README.md`.
 
-## Aktuální bootstrap struktura
+## Struktura
 
 ```text
-00 Inbox/       nezpracované zdroje a nápady
-99 System/      workflow, bezpečnost, Wayfinder a setup
+00 Inbox/         vstupní materiály, ne kánon
+10 Series/        série
+20 World/         sdílený svět
+30 Characters/    master notes postav
+40 Books/         knihy, scény, rukopisy
+90 Research/      evidence a zdroje
+99 System/        workflow, šablony, pravidla
+tools/            export rukopisu
+tests/            testy exportu
 ```
 
-Tohle **není** návrh finální struktury knihy. Je to jen minimální infrastruktura, aby šel setup navrhnout bez chaosu.
+Handoff o Elaře je pracovní námět, ne automaticky schválený kánon. AI pracuje přes větev a PR; merge a kanonizaci schvaluje člověk.
